@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaStore | Premium Products</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #172033;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: white;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #635bff;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #172033;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 580px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 70px 8%;
+            background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+        }
+
+        .hero-content {
+            max-width: 520px;
+        }
+
+        .tag {
+            color: #635bff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 5vw, 60px);
+            line-height: 1.1;
+            margin-bottom: 22px;
+        }
+
+        .hero p {
+            color: #64748b;
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .price del {
+            color: #94a3b8;
+            font-size: 19px;
+            margin-left: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #635bff;
+            color: white;
+            padding: 15px 28px;
+            border-radius: 9px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #4940e0;
+        }
+
+        .product-image {
+            width: min(420px, 100%);
+            min-height: 300px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #c7d2fe, #fbcfe8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 130px;
+            box-shadow: 0 25px 60px #64748b30;
+        }
+
+        section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #64748b;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .feature {
+            padding: 30px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px #17203308;
+        }
+
+        .feature span {
+            font-size: 38px;
+        }
+
+        .feature h3 {
+            margin: 15px 0 10px;
+        }
+
+        .feature p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .cta {
+            background: #172033;
+            color: white;
+        }
+
+        .cta p {
+            color: #cbd5e1;
+            margin: 15px 0 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+            background: white;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 20px 5%;
+            }
+
+            header a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .hero {
+                flex-direction: column;
+                padding: 55px 6%;
+                text-align: center;
+            }
+
+            .product-image {
+                min-height: 250px;
+                font-size: 100px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">NovaStore.</div>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#buy">Buy Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <div class="tag">✨ INTRODUCING OUR BESTSELLER</div>
+
+                <h1>Make Your Life Better.</h1>
+
+                <p>
+                    Discover a product designed for your everyday needs.
+                    Premium quality, modern style and great value —
+                    all in one place.
+                </p>
+
+                <div class="price">
+                    ₹499 <del>₹999</del>
+                </div>
+
+                <a href="#buy" class="btn">Get Yours Today →</a>
+            </div>
+
+            <div class="product-image" aria-label="Product illustration">
+                🎁
+            </div>
+        </div>
+
+        <section id="features">
+            <h2>Why Choose Us?</h2>
+            <p class="subtitle">
+                Everything you need for a better experience.
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <span>⭐</span>
+                    <h3>Premium Quality</h3>
+                    <p>Quality-focused products made for everyday use.</p>
+                </div>
+
+                <div class="feature">
+                    <span>🚚</span>
+                    <h3>Easy Ordering</h3>
+                    <p>Contact us directly to place your order.</p>
+                </div>
+
+                <div class="feature">
+                    <span>💬</span>
+                    <h3>Customer Support</h3>
+                    <p>Get help with your questions before you buy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="buy">
+            <h2>Ready to Order?</h2>
+            <p>Contact us on WhatsApp to ask questions or place your order.</p>
+
+            <!-- Replace 919876543210 with your WhatsApp number -->
+            <a
+                class="btn"
+                href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20order%20your%20product."
+                target="_blank"
+                rel="noopener"
+            >
+                Order on WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 NovaStore. All rights reserved.
+    </footer>
+
+</body>
+</html>
